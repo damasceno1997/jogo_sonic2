@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump with Pl</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+        <filter id="remover-fundo-preto" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                1.2 1.2 1.2 0 -0.04" />
+        </filter>
+    </svg>
+    <h1>Jump with Pl</h1>
+    <p>Use &uarr; para pular, &larr; para andar para trás e &rarr; para andar para frente</p>
+
+    <div class="painel">
+        <button id="pause" type="button">Pausar</button>
+        <button id="reiniciar" type="button">Reiniciar</button>
+    </div>
+
+    <div class="controles" aria-label="Controles do jogo">
+        <button class="controle" type="button" data-acao="tras" aria-label="Andar para trás">&larr;</button>
+        <button class="controle" type="button" data-acao="pular">Pular</button>
+        <button class="controle" type="button" data-acao="frente" aria-label="Andar para frente">&rarr;</button>
+    </div>
+
+    <div id="cenario">
+        <div id="boneco">
+            <img src="image/SONIC.gif" alt="Personagem correndo">
+        </div>
+        <div id="obstaculo1">
+            <img src="image/Gemini_Generated_Image_oz3tb0oz3tb0oz3t.jpg" alt="Obstáculo">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
